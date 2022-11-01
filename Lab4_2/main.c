@@ -2,7 +2,7 @@
 int main(void)
 {
     WDTCTL = WDTPW | WDTHOLD;                 // Stop WDT
-    P1DIR |= BIT6 | BIT7;                     // P1.6 and P1.7 output
+    P1DIR |= BIT6 | BIT7;                     // P1.6 and P1.7 output a
     P1SEL1 |= BIT6 | BIT7;                    // P1.6 and P1.7 options select
     PM5CTL0 &= ~LOCKLPM5;
     TB0CCR0 = 164-1;                         // PWM Period
